@@ -284,87 +284,7 @@
     	QUOTES - END 
     =========================== -->
     
-    <!-- ==========================
-    	BLOG - START
-    =========================== -->   
-    <section id="blog" class="content-first">
-    	<div class="container">
-        	<h2 class="scrollpoint sp-effect3">Latest Instagram Posts</h2>
-        	<p class="scrollpoint sp-effect3">Check out my latest work posted to Instagram regularly.</p> 
-        </div>
-            
-        <div class="line hidden-xs">
-        	<div class="container">
-                <div class="row">
-                    <div class="col-sm-4"><i class="fa fa-instagram"></i></div>
-                    <div class="col-sm-4"><i class="fa fa-instagram"></i></div>
-                    <div class="col-sm-4"><i class="fa fa-instagram"></i></div>
-                </div>
-            </div>
-        </div>
-		
-        <div class="container">
-            <div class="row"><!-- MAIN ROW - Start -->
-            	<!-- BLOG POST - Start -->
-                <div class="col-sm-4 scrollpoint sp-effect1">
-                	<div class="blog-post">
-                    	<div class="blog-body crop-height bg-image-wedding bg-center-center" id="insta-1">
-                    		<!--  <h3>Lorem Ipsum</h3>
-                        	<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
-                        	<a href="blog.html" class="btn btn-primary">Read More</a>-->
-                        </div>
-                        <div class="blog-info">
-                        	<a><i class="fa fa-heart"></i> <span id="insta-1-likes"></span></a>
-                            <a><i class="fa fa-calendar"></i> <span id="insta-1-date"></span></a>
-                            <a href="https://www.instagram.com/2createhappiness/"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- BLOG POST - End -->
-                
-                <!-- BLOG POST - Start -->
-                <div class="col-sm-4 scrollpoint sp-effect3">
-                	<div class="blog-post">
-                    	<div class="blog-body crop-height bg-image-wedding bg-center-center" id="insta-2">
-                    		<!-- <h3>Lorem Ipsum</h3>
-                        	<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
-                        	<a href="blog.html" class="btn btn-primary">Read More</a> -->
-                        </div>
-                        <div class="blog-info">
-                        	<a><i class="fa fa-heart"></i> <span id="insta-2-likes"></span></a>
-                            <a><i class="fa fa-calendar"></i> <span id="insta-2-date"></span></a>
-                            <a href="https://www.instagram.com/2createhappiness/"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- BLOG POST - End -->
-                
-                <!-- BLOG POST - Start -->
-                <div class="col-sm-4 scrollpoint sp-effect2">
-                	<div class="blog-post">
-                    	<div class="blog-body crop-height bg-image-wedding bg-center-center" id="insta-3">
-                    		<!-- <h3>Lorem Ipsum</h3>
-                        	<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
-                        	<a href="blog.html" class="btn btn-primary">Read More</a> -->
-                        </div>
-                        <div class="blog-info">
-                        	<a><i class="fa fa-heart"></i> <span id="insta-3-likes"></span></a>
-                            <a><i class="fa fa-calendar"></i> <span id="insta-3-date"></span></a>
-                            <a href="https://www.instagram.com/2createhappiness/"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- BLOG POST - End -->
-                
-            </div><!-- MAIN ROW - end -->
-            
-            <div id="instafeed"></div>
-            
-        </div><!-- CONTAINER - end -->
-    </section>
-    <!-- ==========================
-    	BLOG - END 
-    =========================== --> 
+    <!-- NOTE: Instagram blog post section saved in insta.php -->
     
     <!-- ==========================
     	TESTIMONIALS - START
@@ -465,7 +385,7 @@
                                     </div>
                                     
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary">Send message</button>
+                                        <a href="mailto:chelseaglenn30@gmail.com?Subject=CreateHappinessNJ"><button type="submit" class="btn btn-primary">Send message</button></a>
                                     </div>
                                 </form>
                                 
@@ -477,6 +397,7 @@
                                 	<p>Chelsea Glenn</p>
                                     <p>Belmar, NJ</p>
                                     <p>732-513-5504</p>
+                                    <p><a href="mailto:chelseaglenn30@gmail.com?Subject=CreateHappinessNJ" style="color: white">chelseaglenn30@gmail.com</a></p>
                                 </div>
                             </div>
                     	</div>
@@ -502,6 +423,7 @@
                             <li><a href="https://www.facebook.com/createhappinessnj/?ref=bookmarks"><i class="fa fa-facebook  hi-icon-effect-8"></i></a></li>
                             <li><a href="https://twitter.com/Chelseaglenn19"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="https://www.instagram.com/2createhappiness/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="mailto:chelseaglenn30@gmail.com?Subject=CreateHappinessNJ"><i class="fa fa-envelope"></i></a></li>
                         </ul>  
                     
                     <p>© Chris Arensdorf 2018 All right reserved.</p>
@@ -560,7 +482,7 @@
 					error: function() {
 						// Fail message
 						$('.contact-alert').html("<div class='alert alert-danger'>");
-						$('.contact-alert > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'><i class='fa fa-times'></i></button><strong>Sorry, it seems that my mail server is not responding. Please try again later!</strong></div>");
+						$('.contact-alert > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'><i class='fa fa-times'></i></button><strong>Sorry, it seems that my mail server is not responding. Please use my email address seen below to send email manually.</strong></div>");
 						//clear all fields
 						$('#contactForm').trigger("reset");
 					},

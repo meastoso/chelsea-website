@@ -116,41 +116,6 @@ $(document).ready(function() {
 	    "/" +  theDate.getFullYear();
 	}
 
-    var oReq = new XMLHttpRequest(); //New request object
-    oReq.onload = function() {
-        //This is where you handle what to do with the response.
-        //The actual data is found on this.responseText
-    	console.log('heres the response from the parser');
-        console.log(JSON.stringify(this.responseText)); //Will alert: 42
-        if (this.responseText !== undefined && this.responseText !== null && this.responseText !== '') {
-        	var instaPicsArr = this.responseText.split(',');
-        	$('#insta-1').append('<img src="' + instaPicsArr[0] + '" class="scale invisible" />');
-        	$('#insta-2').append('<img src="' + instaPicsArr[3] + '" class="scale invisible" />');
-        	$('#insta-3').append('<img src="' + instaPicsArr[6] + '" class="scale invisible" />');
-        	$('#insta-1').css('background-image', 'url(' + instaPicsArr[0] + ')');
-        	$('#insta-2').css('background-image', 'url(' + instaPicsArr[3] + ')');
-        	$('#insta-3').css('background-image', 'url(' + instaPicsArr[6] + ')');
-        	$('#insta-1-likes').text(instaPicsArr[2]);
-        	var d1 = new Date(0); // The 0 there is the key, which sets the date to the epoch
-        	d1.setUTCSeconds(instaPicsArr[1]);
-        	$('#insta-1-date').text(formatDate(d1));
-        	// ------------- 2
-        	$('#insta-2-likes').text(instaPicsArr[5]);
-        	var d2 = new Date(0); // The 0 there is the key, which sets the date to the epoch
-        	d2.setUTCSeconds(instaPicsArr[4]);
-        	$('#insta-2-date').text(formatDate(d2));
-        	// -------------- 3
-        	$('#insta-3-likes').text(instaPicsArr[8]);
-        	var d3 = new Date(0); // The 0 there is the key, which sets the date to the epoch
-        	d3.setUTCSeconds(instaPicsArr[7]);
-        	$('#insta-3-date').text(formatDate(d3));
-        }
-    };
-    oReq.open("get", "insta.php", true);
-    //                               ^ Don't block the rest of the execution.
-    //                                 Don't wait until the request finishes to 
-    //                                 continue.
-    oReq.send();
 });
 
 
